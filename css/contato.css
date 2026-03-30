@@ -1,0 +1,14 @@
+#texto-contato{
+    display: flex;
+    justify-content: center;
+}
+
+#texto-contato-2{
+    display: flex;
+    flex-direction: column;
+}
+
+#contato-page{
+    background-color: #333333;
+    min-width: 1024px;
+}
