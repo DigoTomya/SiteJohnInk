@@ -13,9 +13,10 @@
 }
 
 #infos{
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
     justify-items: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .info{
@@ -75,4 +76,11 @@ button:hover{
     border-radius: 10px;
     padding: 1.5rem;
     margin-top: 24px;
+}
+
+@media screen and (max-width: 768px) {  
+    #infos{
+        width: 100%;
+        flex-direction: column;
+    }
 }
