@@ -1,86 +1,119 @@
-#texto-contato{
+#texto-contato {
     display: flex;
     justify-content: center;
 }
 
-#texto-contato-2{
+#texto-contato-2 {
     display: flex;
     flex-direction: column;
 }
 
-#contato-page{
-    min-width: 1024px;
+#contato-page {
+
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
 }
 
-#infos{
+#infos {
     display: flex;
-    justify-items: center;
     flex-direction: row;
     justify-content: space-around;
+    gap: 20px; 
 }
 
-.info{
-    min-width: 550px;
+.info, .info3, #endereco {
+    min-width: 300px; 
+    max-width: 550px;
+    width: 100%;
     background-color: #101010;
     border-radius: 10px;
     padding: 1.5rem;
+    box-sizing: border-box; 
 }
 
-.info2{
-   display: grid;
-}
-
-.info3{
-    min-width: 550px;
-    background-color: #101010;
-    border-radius: 10px;
-    padding: 1.5rem;
+.info3, #endereco {
     margin-top: 24px;
 }
 
-button{
-    font-size: .875rem;
-    line-height: 1.25rem;
-
-    cursor: pointer;
-    font-family: "Lexend Deca", sans-serif;
-    font-size: .875rem;
-    border: 2px solid #9B7738;
-    border-radius: 10px;
-    background: none;
-    background-color: transparent;
-    color: #9B7738;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    height: 2.25rem;
+.info2 {
+   display: grid;
 }
 
-button:hover{
+button {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    cursor: pointer;
+    font-family: "Lexend Deca", sans-serif;
+    border: 2px solid #9B7738;
+    border-radius: 10px;
+    background: transparent;
+    color: #9B7738;
+    padding: 0 1rem;
+    height: 2.25rem;
+    transition: 0.3s;
+}
+
+button:hover {
     color: black;
     background-color: #9B7738;
 }
 
-.texto{
+.texto {
     max-height: 26px;
     margin-bottom: .75rem;
 }
 
-#numero{    
+#numero {    
     max-height: 26px;
     margin-bottom: 1.5rem;
 }
 
-#endereco{
-    min-width: 550px;
+#maps {       
+    border-radius: 8px;     
+    border: none;
+    display: block;
+    margin-top: 1rem;
+}
+
+#endereco {
+    width: 100%;            
+    max-width: 550px;       
     background-color: #101010;
     border-radius: 10px;
     padding: 1.5rem;
     margin-top: 24px;
+    box-sizing: border-box; 
 }
 
-@media screen and (max-width: 768px) {  
-    #infos{
-        width: 100%;
+@media screen and (max-width: 768px) { 
+    #contato-page {
+        min-width: unset; 
+        padding: 0 15px;  
+    }
+
+    #infos {
         flex-direction: column;
+        align-items: center;    
+    }
+
+    .info, .info3, #endereco {
+        min-width: unset; 
+        width: 100%;     
+        max-width: 100%;
+    }
+
+    #texto-contato {
+        text-align: center; 
+    }
+
+    #endereco {
+        max-width: 100%;    
+        padding: 1rem;      
+    }
+
+    #maps {
+        height: 100%; 
+        width: 100%;    
     }
 }

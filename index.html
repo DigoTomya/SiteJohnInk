@@ -1,96 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
     </style>
     <title>John Ink Tattoo</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="page">
-        <header>
-            <div id="nav">
-                <a href="/SiteJohnInk/index.html">
-                    <img id="logo" src="./assets/images/Jonh ink.png">  
+      <header>
+        <div class="nav">
+          <a href="/SiteJohnInk/index.html">
+            <img class="logo" src="./assets/images/Jonh ink.png" />
+          </a>
+          <nav>
+            <a href="/SiteJohnInk/index.html" class="underline-hover">
+              INÍCIO
+            </a>
+            <a class="underline-hover" href="./assets/pages/contato.html">
+              CONTATO
+            </a>
+          </nav>
+          <div id="nav">
+            <a href="/SiteJohnInk/index.html">
+              <img id="logo" src="./assets/images/Jonh ink.png" />
+            </a>
+
+            <button id="menu-toggle" aria-label="Abrir menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+
+            <nav id="menu">
+              <a href="/SiteJohnInk/index.html">Início</a>
+              <a href="./assets/pages/contato.html">Contato</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section id="sobre">
+          <div id="texto-sobre">
+            <h1>SOBRE MIM</h1>
+            <p></p>
+          </div>
+        </section>
+        <section class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+
+            <div class="slide first">
+              <img src="./assets/images/Tattoo1.png" alt="Tattoo 1" />
+            </div>
+            <div class="slide">
+              <img src="./assets/images/Tattoo2.png" alt="Tattoo 2" />
+            </div>
+            <div class="slide">
+              <img src="./assets/images/Tattoo3.png" alt="Tattoo 3" />
+            </div>
+
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+            </div>
+          </div>
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div id="footer">
+          <div id="footer-2">
+            <div id="contato">
+              <h2>CONTATO</h2>
+              <div id="icons">
+                <a
+                  href="https://www.instagram.com/john.ink.tt/"
+                  target="_blank "
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="icons"
+                    src="./assets/images/instagram-white-icon.png"
+                  />
                 </a>
-                <nav>
-                    <a href="/SiteJohnInk/index.html" class="underline-hover">
-                        INÍCIO   
-                    </a>
-                    <a class="underline-hover" href="./assets/pages/contato.html">
-                        CONTATO
-                    </a>
-                </nav>
+                <a
+                  href="https://api.whatsapp.com/message/DEXZFGUSBQOWN1?autoload=1&app_absent=0&utm_source=ig"
+                  target="_blank "
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="icons"
+                    src="./assets/images/whatsapp-white-icon.png"
+                  />
+                </a>
+              </div>
             </div>
-        </header>
-        <main>
-            <section id="sobre">
-                <div id="texto-sobre">
-                    <h1>
-                        SOBRE MIM
-                    </h1>
-                    <p>
-                        
-                    </p>
-                </div>
-            </section>
-            <section class="slider">
-                <div class="slides">   
-
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-
-                    <div class="slide first">
-                        <img src="./assets/images/Tattoo1.png" alt="Tattoo 1">
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/images/Tattoo2.png" alt="Tattoo 2">
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/images/Tattoo3.png" alt="Tattoo 3">
-                    </div>
-
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                    </div>
-
-                </div>
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div id="footer">
-                <div id="footer-2">
-                    <div id="contato">
-                        <h2>
-                            CONTATO
-                        </h2>
-                        <div id="icons">
-                            <a href="https://www.instagram.com/john.ink.tt/" target="_blank " rel="noopener noreferrer">
-                                <img class="icons" src="./assets/images/instagram-white-icon.png">
-                            </a>
-                            <a href="https://api.whatsapp.com/message/DEXZFGUSBQOWN1?autoload=1&app_absent=0&utm_source=ig" target="_blank " rel="noopener noreferrer">
-                                <img class="icons" src="./assets/images/whatsapp-white-icon.png">
-                            </a>
-                        </div>
-                    </div>    
-                </div>
-                <div id="footer-3">
-                    © 2026 John Ink Tattoo. Todos os direitos reservados
-                </div>                
-            </div>
-        </footer>
+          </div>
+          <div id="footer-3">
+            © 2026 John Ink Tattoo. Todos os direitos reservados
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>

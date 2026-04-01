@@ -28,7 +28,7 @@ nav{
 }
 
 
-#nav{
+.nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,13 +43,13 @@ nav{
     border-style: solid;
 }
 
-#logo{
+#logo, .logo{
     height: 56px;
 }
 
 #sobre{
     background-color: #333333;
-    min-width: 1024px;
+    width: 100%;
 }
 
 #texto-sobre{
@@ -216,4 +216,93 @@ a {
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
     background-color: white;
+}
+
+#nav {
+    display: none;
+}
+
+
+#menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #9B7738; 
+    border-radius: 2px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #menu-toggle {
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-around; 
+        width: 30px;
+        height: 25px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 100;
+    }
+
+    #menu-toggle .bar {
+        width: 100%;
+        height: 3px;
+        background-color: #9B7738; 
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    nav {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 5rem; 
+        left: 0;
+        right: 0;
+        background-color: black;
+        padding: 1rem;
+        gap: 20px;
+        text-align: center;
+        border-bottom: 2px solid #9B7738;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    #nav {
+        min-width: unset; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1024px; 
+    }
+
+    .nav {
+        min-width: unset; 
+        width: 100%;                
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    
+    header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .logo{
+        display: none;
+    }
 }
