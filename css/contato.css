@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 #texto-contato {
     display: flex;
     justify-content: center;
@@ -88,32 +92,31 @@ button:hover {
 
 @media screen and (max-width: 768px) { 
     #contato-page {
-        min-width: unset; 
-        padding: 0 15px;  
+        min-width: 0; 
+        padding: 0 15px;
+        overflow-x: hidden; 
     }
 
     #infos {
         flex-direction: column;
-        align-items: center;    
+        align-items: center;
+        width: 100%; 
     }
 
-    .info, .info3, #endereco {
-        min-width: unset; 
-        width: 100%;     
+    .info, .info3, #endereco, #maps {
+        width: 100% !important; 
         max-width: 100%;
-    }
-
-    #texto-contato {
-        text-align: center; 
+        box-sizing: border-box; 
     }
 
     #endereco {
-        max-width: 100%;    
-        padding: 1rem;      
+        padding: 1rem;
+        margin: 0 auto;
     }
 
-    #maps {
-        height: 100%; 
-        width: 100%;    
+
+    #maps iframe {
+        width: 100% !important;
+        height: 300px; 
     }
 }
